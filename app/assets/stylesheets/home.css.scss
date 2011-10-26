@@ -1,0 +1,47 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  margin-right: auto;
+  margin-left: auto;
+  width: 830px;
+  text-align:center;
+  background: url('/flags_vertical.png') no-repeat 300px -400px;
+}
+
+h1{
+  font-size: 3em;
+  padding: 30px;
+}
+
+p{
+  padding:50px;
+  font-size:1.6em;
+}
+
+.flag{
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid;
+  width:300px;
+  height:200px;
+}
+span.stripe{
+  height:200px;
+  width:100px;
+  display:inline-block;
+  padding:0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
+}
+#blue{
+  background-color: #00f;
+}
+#white {
+  background-color: #fff;
+}
+#red {
+  background-color: #f00;
+}
+
+

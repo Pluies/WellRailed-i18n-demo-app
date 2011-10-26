@@ -1,0 +1,22 @@
+<h1><%=t :title %></h1>
+<p><%=t :hello %></p>
+
+
+
+
+
+<!-- Links -->
+
+<%= link_to 'Default English', :controller => "home", :action => "step1", :locale => "en" %>
+—
+<%= link_to 'New Zealand English', :controller => "home", :action => "step1", :locale => "en-nz" %>
+—
+<%= link_to 'Australian English', :controller => "home", :action => "step1", :locale => "en-au" %>
+—
+<%= link_to 'Maori', :controller => "home", :action => "step1", :locale => "ma" %>
+—
+<%= link_to 'French', :controller => "home", :action => "step1", :locale => "fr" %>
+<br />
+<br />
+<br />
+<%= link_to 'Next', :controller => "home", :action => "step2" %>

@@ -1,0 +1,28 @@
+en:
+  title: "WellRailed i18n demo, in English (en, default)"
+  hello: "Hi!"
+
+  step2:
+    title: "Localization, English"
+    date: "Date: "
+    day: "Custom, day and month: "
+    money: "Some money: "
+    readable: "Some big number made readable: "
+    distance: "Distance: "
+    when:
+      world_cup: "The world cup finals was %{since_finals} ago."
+      last_world_cup: "The last world cup the All Blacks won was %{since_last_won} ago."
+      talk: "The beginning of this talk was %{since_talk} ago."
+
+  # Borrowed from https://github.com/svenfuchs/rails-i18n/tree/master/rails/locale and tweaked
+  time:
+    formats:
+      daymonth:  "%d %B"
+
+  distance:
+    unit:
+      one: "inch"
+      other: "inches"
+    thousand:
+      one: "mile"
+      other: "miles"

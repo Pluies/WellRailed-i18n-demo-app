@@ -1,0 +1,30 @@
+<h1><%=t :'step2.title' %></h1>
+<p>
+<strong><%=t :'step2.date' %></strong> <%=l Time.now, :day => @day %>
+<br/>
+<br/>
+<strong><%=t :'step2.day' %></strong> <%=l Time.now, :format => :daymonth %>
+<br/>
+<br/>
+<strong><%=t :'step2.money' %></strong> <%= number_to_currency @amount %>
+<br/>
+<br/>
+<strong><%=t :'step2.readable' %></strong> <%= number_to_human @bignum %>
+<br/>
+<br/>
+<strong><%=t :'step2.distance' %></strong> <%= number_to_human @distance, :units => :distance %>
+<br/>
+<br/>
+<%=t :'step2.when.world_cup', :since_finals => distance_of_time_in_words(Time.now, @since_finals) %>
+<br/>
+<%=t :'step2.when.last_world_cup', :since_last_won => distance_of_time_in_words(Time.now, @since_last_won) %>
+<br/>
+<%=t :'step2.when.talk', :since_talk => distance_of_time_in_words(Time.now, @since_talk) %>
+</p>
+
+<%= link_to 'Default English', :controller => "home", :action => "step2", :locale => "en" %>
+—
+<%= link_to 'New Zealander', :controller => "home", :action => "step2", :locale => "en-nz" %>
+—
+<%= link_to 'French', :controller => "home", :action => "step2", :locale => "fr" %>
+
